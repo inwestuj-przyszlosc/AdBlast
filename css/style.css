@@ -1,0 +1,452 @@
+/* ## GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+span {
+    font-weight: 600;
+}
+
+.header-section {
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+.header-section h2 {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.header-section h4 {
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 573px) {
+    .header-section h2 {
+        font-size: 2.8rem;
+    }
+
+    .header-section h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-section h2 {
+        margin-top: 35px;
+        font-size: 3.5rem;
+    }
+
+    .header-section h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-section h2 {
+        margin-top: 35px;
+        font-size: 4.5rem;
+    }
+
+    .header-section h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ## NAVIGATION */
+#main-nav {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    color: #fff;
+    z-index: 1;
+}
+
+#main-nav .company-name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#main-nav .company-name i {
+    transform: rotate(90deg);
+}
+
+@media (min-width: 366px) {
+    #main-nav .company-name {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #main-nav .company-name {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    #main-nav .logo-company {
+        font-size: 1.3rem;
+    }
+}
+
+/* ## HEADER STYLES */
+#main-header {
+    position: relative;
+    background-image: url(../images/header-rwd.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-header .bgc-header {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(37, 49, 117, 0.5);
+}
+
+#main-header .bgc-header .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#main-header .bgc-header .header-content h2 {
+    font-size: 1.2rem;
+    margin: 10%;
+    font-weight: 300;
+}
+
+
+#main-header .bgc-header .header-content h1 {
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+#main-header .bgc-header .down {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    animation: move 5s infinite;
+}
+
+#main-header .bgc-header .down i {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+@media (min-width: 366px) and (orientation: portrait) {
+    #main-header .bgc-header .header-content h2 {
+        font-size: 1.3rem;
+    }
+
+    #main-header .bgc-header .header-content h1 {
+        font-size: 2.3rem;
+        margin: 50px 5% 0 5%;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    #main-header .bgc-header .header-content h2 {
+        font-size: 2.1rem;
+    }
+
+    #main-header .bgc-header .header-content h1 {
+        font-size: 3.3rem;
+        margin: 50px 5% 0 5%;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    #main-header .bgc-header .header-content h2 {
+        font-size: 3.1rem;
+    }
+
+    #main-header .bgc-header .header-content h1 {
+        font-size: 4.3rem;
+        margin: 50px 5% 0 5%;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    #main-header {
+        background-image: url(../images/header.jpg);
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    #main-header .bgc-header .header-content h2 {
+        font-size: 1.5rem;
+        margin: 55px 0 0 0;
+    }
+
+    #main-header .bgc-header .header-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1028px) and (orientation: landscape) {
+    #main-header .bgc-header .header-content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main-header .bgc-header .header-content h2 {
+        font-size: 2.2rem;
+        margin: 55px 0 0 0;
+    }
+
+    #main-header .bgc-header .header-content h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* ## Service general styles */
+#services .service-features {
+    padding: 50px 30px;
+}
+
+#services .service-features .service-content h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#services .service-features .service-content p {
+    text-align: justify;
+    margin: 25px 0;
+}
+
+#services .service-features .service-icon {
+    display: none;
+}
+
+@media (min-width: 575px) {
+    #services .service-features {
+        padding: 50px 80px;
+    }
+
+    #services .service-features .service-content h2 {
+        font-size: 1.9rem;
+    }
+
+    #services .service-features .service-content p {
+        margin: 40px 0;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #services .service-features {
+        padding: 80px 80px;
+    }
+
+    #services .service-features .service-content h2 {
+        font-size: 2.1rem;
+    }
+
+    #services .service-features .service-content p {
+        margin: 60px 0;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #services .service-features {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #services .service-features .service-content {
+        flex-basis: 60%;
+    }
+
+    #services .service-features .service-content h2 {
+        font-size: 2.4rem;
+    }
+
+    #services .service-features .service-content p {
+        margin: 40px 0;
+        text-align: left;
+    }
+
+    #services .service-features .service-icon {
+        position: relative;
+        display: block;
+        flex-basis: 40%;
+        font-size: 10rem;
+    }
+
+    #services .service-features .service-icon i {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-70%, -50%);
+        color: rgba(187, 187, 187, 0.63);
+    }
+}
+
+/* ## Service development part */
+
+
+/* ## Service branding part */
+#services .branding {
+    background-color: #fafafa;
+}
+
+@media (min-width: 992px) {
+    #services .branding .service-content {
+        order: 1;
+    }
+
+    #services .branding .service-icon {
+        order: 0;
+    }
+
+    #services .branding .service-icon i {
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+    }
+}
+
+@media (min-width: 1280px) {
+    #services .branding .service-icon i {
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+    }
+}
+
+/* ## Section service */
+#service {
+    background-color: #f0f0f0;
+    padding-bottom: 50px;
+    padding: 50px 30px;
+}
+
+#service p {
+    text-align: justify;
+}
+
+#service p:nth-of-type(2) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#service .contact {
+    margin-top: 30px;
+}
+
+#service .contact h2 {
+    text-align: justify;
+}
+
+#service .contact p {
+    margin-top: 40px;
+    color: rgb(88, 88, 88);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media(min-width: 468px) {
+    #service .contact p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width: 576px) {
+    #service p {
+        margin: 40px 0;
+        font-size: 1.2rem;
+    }
+
+    #service .contact p {
+        font-size: 1.6rem;
+    }
+}
+
+@media(min-width: 768px) {
+    #service p {
+        margin: 60px 0;
+        font-size: 1.2rem;
+    }
+
+    #service .contact p {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 992px) {
+    #service p {
+        margin: 40px 0;
+        text-align: left;
+    }
+}
+
+/* ## FOOTER */
+#main-footer {
+    background-color: #7690c5;
+    width: 100%;
+    text-align: center;
+}
+
+#main-footer hr {
+    width: 80%;
+    margin: 0 10%;
+    opacity: 0.2;
+}
+
+#main-footer p {
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+#main-footer p a {
+    color: rgb(156, 245, 148);
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    #main-footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ANIMATION */
+@keyframes move {
+    0% {
+        bottom: 3%;
+    }
+
+    25% {
+        bottom: -5%;
+    }
+
+    50% {
+        bottom: 3%;
+    }
+
+    75% {
+        bottom: -5%;
+    }
+
+    100% {
+        bottom: 3%;
+    }
+}
